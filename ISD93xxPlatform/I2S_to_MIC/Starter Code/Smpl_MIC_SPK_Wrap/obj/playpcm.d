@@ -1,0 +1,14 @@
+.\obj\playpcm.o: PlayPCM.c
+.\obj\playpcm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\ISD93xx.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\playpcm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\playpcm.o: ..\..\..\Include\System\SysInfra.h
+.\obj\playpcm.o: ..\..\..\Include\System\ModuleID.h
+.\obj\playpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\playpcm.o: ..\..\..\Include\Driver\DrvPDMA.h
+.\obj\playpcm.o: ..\..\..\Include\Driver\DrvDPWM.h
+.\obj\playpcm.o: ..\..\..\Include\Driver\DrvFMC.h

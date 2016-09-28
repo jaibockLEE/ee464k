@@ -1,0 +1,16 @@
+.\obj\mic_i2s.o: MIC_I2S.c
+.\obj\mic_i2s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\ISD93xx.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\mic_i2s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\mic_i2s.o: ..\..\..\Include\System\SysInfra.h
+.\obj\mic_i2s.o: ..\..\..\Include\System\ModuleID.h
+.\obj\mic_i2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\mic_i2s.o: ..\..\..\Include\Driver\DrvUART.h
+.\obj\mic_i2s.o: ..\..\..\Include\Driver\DrvSYS.h
+.\obj\mic_i2s.o: ..\..\..\Include\Driver\DrvADC.h
+.\obj\mic_i2s.o: ..\..\..\Include\NVTTypes.h
+.\obj\mic_i2s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

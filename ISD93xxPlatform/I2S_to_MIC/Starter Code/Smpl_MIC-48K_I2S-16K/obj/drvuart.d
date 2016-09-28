@@ -1,0 +1,13 @@
+.\obj\drvuart.o: ..\..\..\Src\Driver\DrvUART.c
+.\obj\drvuart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\isd93xx.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvuart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\drvuart.o: ..\..\..\Include\System\SysInfra.h
+.\obj\drvuart.o: ..\..\..\Include\System\ModuleID.h
+.\obj\drvuart.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvuart.o: ..\..\..\Include\Driver\DrvUART.h
+.\obj\drvuart.o: ..\..\..\Include\Driver\DrvSYS.h

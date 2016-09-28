@@ -1,0 +1,13 @@
+.\obj\drvi2s.o: ..\..\..\Src\Driver\DrvI2S.c
+.\obj\drvi2s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\drvi2s.o: ..\..\..\Include\Driver\DrvI2S.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\isd93xx.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvi2s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\drvi2s.o: ..\..\..\Include\System\SysInfra.h
+.\obj\drvi2s.o: ..\..\..\Include\System\ModuleID.h
+.\obj\drvi2s.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvi2s.o: ..\..\..\Include\Driver\DrvSYS.h

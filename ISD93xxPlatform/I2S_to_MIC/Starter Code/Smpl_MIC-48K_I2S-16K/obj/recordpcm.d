@@ -1,0 +1,14 @@
+.\obj\recordpcm.o: RecordPCM.c
+.\obj\recordpcm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\ISD93xx.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\recordpcm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\recordpcm.o: ..\..\..\Include\System\SysInfra.h
+.\obj\recordpcm.o: ..\..\..\Include\System\ModuleID.h
+.\obj\recordpcm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\recordpcm.o: ..\..\..\Include\Driver\DrvPDMA.h
+.\obj\recordpcm.o: ..\..\..\Include\Driver\DrvADC.h
+.\obj\recordpcm.o: ..\..\..\Include\Driver\DrvALC.h

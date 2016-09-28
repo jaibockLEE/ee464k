@@ -1,0 +1,12 @@
+.\obj\drvdpwm.o: ..\..\..\Src\Driver\DrvDPWM.c
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\isd93xx.h
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvdpwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\drvdpwm.o: ..\..\..\Include\System\SysInfra.h
+.\obj\drvdpwm.o: ..\..\..\Include\System\ModuleID.h
+.\obj\drvdpwm.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvdpwm.o: ..\..\..\Include\Driver\DrvDPWM.h
+.\obj\drvdpwm.o: ..\..\..\Include\Driver\DrvSYS.h

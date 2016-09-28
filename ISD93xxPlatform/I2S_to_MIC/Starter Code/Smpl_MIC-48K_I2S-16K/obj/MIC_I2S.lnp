@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+".\obj\core_cm0.o"
+".\obj\boot_isd93xx.o"
+".\obj\system_isd93xx.o"
+".\obj\recordpcm.o"
+".\obj\pdma_i2s.o"
+".\obj\setbiq.o"
+".\obj\mic_i2s.o"
+".\obj\retarget.o"
+".\obj\drvfmc.o"
+".\obj\drvsys.o"
+".\obj\drvuart.o"
+".\obj\drvadc.o"
+".\obj\drvpdma.o"
+"..\..\..\Lib\SemiHost_Keil.lib"
+".\obj\drvgpio.o"
+".\obj\drvdpwm.o"
+".\obj\drvi2s.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict
+--map --first='boot_ISD93xx.o(vectors)' --datacompressor=off --info=inline --entry Reset_Handler --callgraph --summary_stderr --info summarysizes --map --callgraph --symbols
+--info sizes --info totals
+--list ".\lst\MIC_I2S.map" -o .\obj\MIC_I2S.axf

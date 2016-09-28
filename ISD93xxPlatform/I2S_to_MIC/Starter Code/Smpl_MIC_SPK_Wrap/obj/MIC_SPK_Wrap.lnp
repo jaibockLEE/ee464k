@@ -1,0 +1,20 @@
+--cpu Cortex-M0
+".\obj\core_cm0.o"
+".\obj\boot_isd93xx.o"
+".\obj\system_isd93xx.o"
+".\obj\playpcm.o"
+".\obj\recordpcm.o"
+".\obj\mic_spk.o"
+".\obj\retarget.o"
+".\obj\drvfmc.o"
+".\obj\drvsys.o"
+".\obj\drvuart.o"
+".\obj\drvadc.o"
+".\obj\drvpdma.o"
+"..\..\..\Lib\SemiHost_Keil.lib"
+".\obj\drvgpio.o"
+".\obj\drvdpwm.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict
+--map --first='boot_ISD93xx.o(vectors)' --datacompressor=off --info=inline --entry Reset_Handler --callgraph --summary_stderr --info summarysizes --map --callgraph --symbols
+--info sizes --info totals
+--list ".\lst\MIC_SPK_Wrap.map" -o .\obj\MIC_SPK_Wrap.axf

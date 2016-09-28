@@ -1,0 +1,12 @@
+.\obj\drvsys.o: ..\..\..\Src\Driver\DrvSYS.c
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\isd93xx.h
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvsys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmInstr.h
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cmFunc.h
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\ISD93xx\system_ISD93xx.h
+.\obj\drvsys.o: ..\..\..\Include\System\SysInfra.h
+.\obj\drvsys.o: ..\..\..\Include\System\ModuleID.h
+.\obj\drvsys.o: ..\..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h
+.\obj\drvsys.o: ..\..\..\Include\Driver\DrvSYS.h
+.\obj\drvsys.o: ..\..\..\Include\Driver\DrvFMC.h

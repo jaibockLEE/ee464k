@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/UL00/!svn/ver/26971/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver
+END
+DrvI2C.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/24883/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvI2C.h
+END
+DrvSYS.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26527/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvSYS.h
+END
+DrvTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/UL00/!svn/ver/25100/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvTimer.h
+END
+DrvTALARM.H
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/UL00/!svn/ver/26359/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvTALARM.H
+END
+DrvPDMA.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/UL00/!svn/ver/26575/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvPDMA.h
+END
+biq_correction_arb_2x.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/UL00/!svn/ver/26616/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/biq_correction_arb_2x.h
+END
+DrvOSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26547/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvOSC.h
+END
+biq_correction_arb_3x.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/UL00/!svn/ver/26616/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/biq_correction_arb_3x.h
+END
+biq_correction_arb_4x.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/UL00/!svn/ver/26616/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/biq_correction_arb_4x.h
+END
+DrvADC.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26623/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvADC.h
+END
+DrvRTC.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/25041/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvRTC.h
+END
+DrvI2S.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/24883/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvI2S.h
+END
+DrvGPIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/UL00/!svn/ver/26722/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvGPIO.h
+END
+DrvALC.H
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/24883/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvALC.H
+END
+DrvCapSense.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/UL00/!svn/ver/26971/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvCapSense.h
+END
+DrvPMU.H
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/24883/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvPMU.H
+END
+DrvPWM.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26359/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvPWM.h
+END
+DrvBOD.H
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26539/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvBOD.H
+END
+DrvBODTALARM.H
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/UL00/!svn/ver/25047/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvBODTALARM.H
+END
+DrvFMC.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/UL00/!svn/ver/26526/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvFMC.h
+END
+DrvDPWM.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/UL00/!svn/ver/26540/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvDPWM.h
+END
+DrvPDMACRC.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/UL00/!svn/ver/26575/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvPDMACRC.h
+END
+DrvUART.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/UL00/!svn/ver/24883/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvUART.h
+END
+DrvQSPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/UL00/!svn/ver/26335/Products/ChipCorder/ISD9340/software/ISD9340_Keil/Include/Driver/DrvQSPI.h
+END
