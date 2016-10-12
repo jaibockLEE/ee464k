@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nuvaton Audio Conference Interface</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://seiyria.com/bootstrap-slider/js/bootstrap-slider.js"></script>
+
+  <style>
+#triangle-1, #triangle-2, #triangle-3, #triangle-4, #triangle-5, #triangle-6, #triangle-7, #triangle-8 {
+	width: 0;
+	height: 0;
+	position:absolute;
+	outline: 2px solid white;
+}
+
+#triangle-1 {
+ 	border-top: 200px solid #eeeeee; 
+ 	border-left: 200px solid transparent !important;
+    left: 0px;
+    top: 100px;
+}
+#triangle-2:hover{
+	border-bottom-color:green;
+}
+#triangle-2 {
+	border-bottom: 200px solid #dddddd;
+	border-right: 200px solid transparent;
+    left: 0px;
+    top: 100px;
+}
+#triangle-3 {
+	border-top: 200px solid #eeeeee;
+	border-right: 200px solid transparent;
+    left: 0px;
+    top: 300px;
+}
+#triangle-4 {
+	border-bottom: 200px solid #dddddd;
+	border-left: 200px solid transparent;
+    left: 0px;
+    top: 300px;
+}
+#triangle-5 {
+	border-top: 200px solid #eeeeee;
+	border-right: 200px solid transparent !important;
+    left: 200px;
+    top: 100px;
+}
+#triangle-6 {
+	border-bottom: 200px solid #dddddd;
+	border-left: 200px solid transparent;
+    left: 200px;
+    top: 100px;
+}
+#triangle-7 {
+	border-top: 200px solid #eeeeee;
+	border-left: 200px solid transparent;
+    left: 200px;
+    top: 300px;
+}
+#triangle-8 {
+	border-bottom: 200px solid #dddddd;
+	border-right: 200px solid transparent;
+    left: 200px;
+    top: 300px;
+}
+
+#power.red{ background-color:red;}
+  </style>
+
+</head>
+<body>
+
+<div class="container" style="background-color:#aaaaaa;width:400px;height:100%;position:relative;padding-top:5px;">
+
+<button type="button" class="btn btn-default" id="power">
+	<span class="glyphicon glyphicon glyphicon-off"></span>
+</button>
+
+<h4>Volume: </h4>
+<input id="vol" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10" style="width:100%;" />
+<br>
+<h4>Degree: </h4>
+<input type="text" value="45" id="deg" style="width:100%;"/>
+<br>
+<button onclick="changeParam()">Change</button>
+<br><br>
+</div>
+
+
+<div class="container" style="background-color:#aaaaaa;width:400px;position:relative;margin-top:-100px;">
+
+  <div id="triangle-1"></div>
+  <div id="triangle-2"></div>
+  <div id="triangle-3"></div>
+  <div id="triangle-4"></div>
+  <div id="triangle-5"></div>
+  <div id="triangle-6"></div>
+  <div id="triangle-7"></div>
+  <div id="triangle-8"></div>
+</div>
+
+<script>
+function changeParam() {
+  var xhttp;
+  xhttp = new XMLHttpRequest();
+  var vol = (document.getElementById('vol').value)/20;
+  var deg = document.getElementById('deg').value;
+  alert("vol: " + vol + " deg:" + deg);
+  xhttp.open("GET", "execute.php?v="+vol+"&d="+deg, true);
+  xhttp.send();
+}
+</script>
+
+<script>
+$( "#power" ).click(function() {
+  $(this).toggleClass("red");
+});
+</script>
+
+<script>$('#vol').slider({
+	formatter: function(value) {
+		return value;
+	}
+});</script>
+
+
+</body>
+</html>
