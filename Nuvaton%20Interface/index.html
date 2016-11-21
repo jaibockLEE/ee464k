@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Nuvaton Audio Conference Interface</title>
+  <title>Nuvoton Audio Conference Interface</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,111 +9,151 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://seiyria.com/bootstrap-slider/js/bootstrap-slider.js"></script>
-
-  <style>
-#triangle-1, #triangle-2, #triangle-3, #triangle-4, #triangle-5, #triangle-6, #triangle-7, #triangle-8 {
-	width: 0;
-	height: 0;
-	position:absolute;
-	outline: 2px solid white;
-}
-
-#triangle-1 {
- 	border-top: 200px solid #eeeeee; 
- 	border-left: 200px solid transparent !important;
-    left: 0px;
-    top: 100px;
-}
-#triangle-2:hover{
-	border-bottom-color:green;
-}
-#triangle-2 {
-	border-bottom: 200px solid #dddddd;
-	border-right: 200px solid transparent;
-    left: 0px;
-    top: 100px;
-}
-#triangle-3 {
-	border-top: 200px solid #eeeeee;
-	border-right: 200px solid transparent;
-    left: 0px;
-    top: 300px;
-}
-#triangle-4 {
-	border-bottom: 200px solid #dddddd;
-	border-left: 200px solid transparent;
-    left: 0px;
-    top: 300px;
-}
-#triangle-5 {
-	border-top: 200px solid #eeeeee;
-	border-right: 200px solid transparent !important;
-    left: 200px;
-    top: 100px;
-}
-#triangle-6 {
-	border-bottom: 200px solid #dddddd;
-	border-left: 200px solid transparent;
-    left: 200px;
-    top: 100px;
-}
-#triangle-7 {
-	border-top: 200px solid #eeeeee;
-	border-left: 200px solid transparent;
-    left: 200px;
-    top: 300px;
-}
-#triangle-8 {
-	border-bottom: 200px solid #dddddd;
-	border-right: 200px solid transparent;
-    left: 200px;
-    top: 300px;
-}
-
-#power.red{ background-color:red;}
-  </style>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<div class="container" style="background-color:#aaaaaa;width:400px;height:100%;position:relative;padding-top:5px;">
+<div ng-app="app" ng-controller="AppCtrl" class="container" style="background-color:#fff;width:400px;height:100%;padding-top:5px;">
 
-<button type="button" class="btn btn-default" id="power">
-	<span class="glyphicon glyphicon glyphicon-off"></span>
-</button>
+<div style="text-align:center">
+<img src="http://i66.tinypic.com/2vi2uxs.png">
+</div>
 
-<h4>Volume: </h4>
-<input id="vol" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10" style="width:100%;" />
+<h5>Volume: </h5>
+<input id="vol" data-slider-id="volSlider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10" style="width:100%;" />
 <br>
-<h4>Degree: </h4>
-<input type="text" value="45" id="deg" style="width:100%;"/>
-<br>
-<button onclick="changeParam()">Change</button>
+<h5>Degree: </h5>
+<input type="text" id="deg" style="width:100%;"/>
 <br><br>
+<center><button onclick="changeParam()" class="btn btn-info btn-block" style="background-color:#ED794A !important;border-color: #E72212 !important">Update</button></center>
+
+<br>
+<center>
+ <canvas id="canvas" width="365" height="365" style="border:1px solid #000;background:#FDE7DA;""></canvas>
+</center>
 </div>
 
 
-<div class="container" style="background-color:#aaaaaa;width:400px;position:relative;margin-top:-100px;">
 
-  <div id="triangle-1"></div>
-  <div id="triangle-2"></div>
-  <div id="triangle-3"></div>
-  <div id="triangle-4"></div>
-  <div id="triangle-5"></div>
-  <div id="triangle-6"></div>
-  <div id="triangle-7"></div>
-  <div id="triangle-8"></div>
-</div>
+<script>
+var clicks = 0;
+var lastClick = [0, 0];
+
+document.getElementById('canvas').addEventListener('click', drawLine, false);
+
+function getCursorPosition(e) {
+    var x;
+    var y;
+
+    if (e.pageX != undefined && e.pageY != undefined) {
+        x = e.pageX;
+        y = e.pageY;
+    } else {
+        x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    
+    return [x, y];
+}
+
+function drawLine(e) {
+    context = this.getContext('2d');
+
+    x = getCursorPosition(e)[0] - this.offsetLeft;
+    y = getCursorPosition(e)[1] - this.offsetTop;
+    
+    if (clicks != 1) {
+        clicks++;
+    } else {
+        context.beginPath();
+        context.moveTo(lastClick[0], lastClick[1]);
+        context.lineTo(x, y, 6);
+        
+        context.strokeStyle = '#E72212';
+        context.stroke();
+        
+        clicks = 0;
+    }
+    
+    lastClick = [x, y];
+};
+</script>
+
+<script>
+document.getElementById('canvas').addEventListener('click', drawLine, false);
+
+function getCursorPosition(e) {
+    var x;
+    var y;
+
+    if (e.pageX != undefined && e.pageY != undefined) {
+        x = e.pageX;
+        y = e.pageY;
+    } else {
+        x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    
+    return [x, y];
+}
+
+function drawLine(e) {
+    context = this.getContext('2d');
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    x = getCursorPosition(e)[0] - this.offsetLeft;
+    y = getCursorPosition(e)[1] - this.offsetTop;
+        context.beginPath();
+        context.moveTo((canvas.width)/2, (canvas.height)/2);
+        console.log("x: " + x + " y: " + y);
+        // Calculate angle
+        Bx = (canvas.width)/2;
+        By = (canvas.height)/2;
+        Ax = (canvas.width);
+        Ay = (canvas.height)/2;
+        var AB = Math.sqrt(Math.pow(Bx-Ax,2)+ Math.pow(By-Ay,2));
+        var BC = Math.sqrt(Math.pow(Bx-x,2)+ Math.pow(By-y,2)); 
+        var AC = Math.sqrt(Math.pow(x-Ax,2)+ Math.pow(y-Ay,2));
+        angleDeg = (Math.acos((BC*BC+AB*AB-AC*AC)/(2*BC*AB))) * (180 / Math.PI);
+        // If click is in quadrant 3 or 4
+        if(y > (canvas.width/2)){
+            angleDeg = 360 - angleDeg;
+        }
+        /* Using angle, determine which part of line should be extended
+        if(angleDeg >= 45 && angleDeg <= 135){
+            slope = ((250-y)/(250-x));
+            x = ((y)/slope)+x;
+            console.log("slope " + slope);
+            y = 0;
+        }
+        else if(angleDeg > 135 && angleDeg < 225){
+            x = 0;
+        } */
+
+        console.log("angle: " + angleDeg);
+        angleDeg = Number((angleDeg).toFixed(2));
+        document.getElementById('deg').value = angleDeg;
+        context.lineTo(x, y, 6);
+        
+        context.strokeStyle = '#000000';
+        context.stroke();
+};
+</script>
 
 <script>
 function changeParam() {
-  var xhttp;
-  xhttp = new XMLHttpRequest();
   var vol = (document.getElementById('vol').value)/20;
   var deg = document.getElementById('deg').value;
-  alert("vol: " + vol + " deg:" + deg);
-  xhttp.open("GET", "execute.php?v="+vol+"&d="+deg, true);
-  xhttp.send();
+  //alert("vol: " + vol + " deg: " + deg);
+  var loc = "execute.php?d=" + deg + "&v=" + vol;
+  window.location=loc;
+}
+
+function getPosition(canvas, event) {
+    var rect = canvas.getBoundingClientRect();
+    var x = event.clientX - rect.left;
+    var y = event.clientY - rect.top;
 }
 </script>
 
@@ -124,9 +164,9 @@ $( "#power" ).click(function() {
 </script>
 
 <script>$('#vol').slider({
-	formatter: function(value) {
-		return value;
-	}
+  formatter: function(value) {
+    return value;
+  }
 });</script>
 
 

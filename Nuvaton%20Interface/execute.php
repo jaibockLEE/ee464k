@@ -1,5 +1,4 @@
-// get the volume parameter
-$v = $_REQUEST["v"];
-$m = 
-
-system("./Beamforming 23.0 .5")
+<?php
+$s = "./fixed_beamformer/Beamforming " . $_GET["d"] . " " . $_GET["v"];
+system($s);
+?>
