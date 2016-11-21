@@ -104,6 +104,25 @@ function drawLine(e) {
 
     x = getCursorPosition(e)[0] - this.offsetLeft;
     y = getCursorPosition(e)[1] - this.offsetTop;
+        console.log("x: " + x + " y: " + y);
+
+        //determine slope
+        var yslope = (canvas.height)/2 - y;
+        var xslope = (canvas.width)/2 - x;
+        var slope = -(yslope/xslope);
+        console.log("slope: " + slope);
+        //newx, if in q1 or q2
+        if(y<180){
+        	x = x + (y/slope); 
+        	y = 0;
+        }
+        //newx, if in q3 or q4
+        else if (y>180){
+        	x = x + ((y-canvas.height)/slope); 
+        	y = canvas.height;
+        }
+
+
         context.beginPath();
         context.moveTo((canvas.width)/2, (canvas.height)/2);
         console.log("x: " + x + " y: " + y);
@@ -120,6 +139,8 @@ function drawLine(e) {
         if(y > (canvas.width/2)){
             angleDeg = 360 - angleDeg;
         }
+
+
         /* Using angle, determine which part of line should be extended
         if(angleDeg >= 45 && angleDeg <= 135){
             slope = ((250-y)/(250-x));
